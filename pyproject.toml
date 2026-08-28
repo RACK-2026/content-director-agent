@@ -1,0 +1,13 @@
+[project]
+name = "content-director-agent"
+version = "0.1.0"
+description = "Privacy-safe, explainable content scripting and review demo"
+requires-python = ">=3.10"
+
+[project.scripts]
+content-director = "content_director.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
